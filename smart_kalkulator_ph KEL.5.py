@@ -27,7 +27,7 @@ menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"]
 
 if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
-    st.image("https://cdn.pixabay.com/photo/2017/01/31/17/02/laboratory-2027517_1280.png", caption="Ilustrasi Kimia", use_column_width=True)
+    st.image("https://cdn.pixabay.com/photo/2017/01/31/17/02/laboratory-2027517_1280.png", caption="Ilustrasi Kimia", use_container_width=True)
     st.markdown("""
     ### Oleh:
     - Amar Evan Gading (2460321)  
@@ -39,7 +39,7 @@ if menu == "Beranda":
 
 elif menu == "Hitung pH":
     st.header("🔬 Kalkulator pH Larutan")
-    st.image("https://cdn.pixabay.com/photo/2021/03/08/16/45/laboratory-6078184_960_720.png", caption="Simulasi Hitung pH", use_column_width=True)
+    st.image("https://cdn.pixabay.com/photo/2021/03/08/16/45/laboratory-6078184_960_720.png", caption="Simulasi Hitung pH", use_container_width=True)
 
     jenis = st.selectbox("Pilih Jenis Larutan:", ["Asam Kuat", "Asam Lemah", "Basa Kuat", "Basa Lemah"])
     konsentrasi = st.number_input("Masukkan konsentrasi (M):", min_value=0.0, step=0.001, format="%.3f")
@@ -74,7 +74,7 @@ elif menu == "Hitung pH":
 
 elif menu == "Tentang Aplikasi":
     st.header("📘 Tentang Aplikasi")
-    st.image("https://cdn.pixabay.com/photo/2016/11/18/12/52/chemistry-1835800_960_720.jpg", caption="Informasi Kimia", use_column_width=True)
+    st.image("https://cdn.pixabay.com/photo/2016/11/18/12/52/chemistry-1835800_960_720.jpg", caption="Informasi Kimia", use_container_width=True)
 
     st.markdown("""
     ### 1. Apa itu pH?
