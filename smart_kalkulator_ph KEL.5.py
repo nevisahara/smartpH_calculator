@@ -5,21 +5,21 @@ import math
 # Konfigurasi halaman
 st.set_page_config(page_title="Smart Kalkulator pH", layout="centered", page_icon="🧪")
 
-# Tema CSS biru tua
+# Tema CSS hijau
 st.markdown("""
     <style>
         body {
-            background-color: #0a1a2f;
+            background-color: #3D8D7A;
             color: #ffffff;
         }
         .stApp {
-            background-color: #0a1a2f;
+            background-color: #3D8D7A;
         }
         h1, h2, h3, h4, h5 {
             color: #ffffff;
         }
         .sidebar .sidebar-content {
-            background-color: #0a1a2f;
+            background-color: #3D8D7A;
         }
     </style>
 """, unsafe_allow_html=True)
