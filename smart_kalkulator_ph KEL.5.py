@@ -4,21 +4,21 @@ import math
 # Konfigurasi halaman
 st.set_page_config(page_title="Smart Kalkulator pH", layout="centered")
 
-# CSS untuk tema biru tua dengan teks putih
-dark_blue_theme = """
+# CSS untuk tema hitam dengan teks putih
+st.markdown("""
 <style>
 body {
-    background-color: #0d1b2a;
+    background-color: #000000;
     color: white;
 }
 
 [data-testid="stAppViewContainer"] > .main {
-    background-color: #0d1b2a;
+    background-color: #000000;
     color: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .stTextInput>div>input {
-    color: white !important;
+h1, h2, h3, h4, h5, h6, p, span {
+    color: white;
 }
 
 .stButton > button {
@@ -27,26 +27,19 @@ h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .stTextInput>div>input {
     border-radius: 8px;
 }
 
-.stSelectbox > div, .stNumberInput > div {
-    background-color: #1e293b;
+.stSelectbox, .stNumberInput {
+    background-color: #1e1e1e;
     color: white;
 }
-
-img {
-    border-radius: 12px;
-    margin-top: 20px;
-}
 </style>
-"""
-
-st.markdown(dark_blue_theme, unsafe_allow_html=True)
+""", unsafe_allow_html=True)
 
 # Sidebar Navigasi
 menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
 
 if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
-    st.image("https://cdn-icons-png.flaticon.com/512/3062/3062634.png", width=200, caption="Ilustrasi Larutan Kimia")
+    st.image("https://cdn.pixabay.com/photo/2017/09/21/15/11/laboratory-2778756_960_720.jpg", use_column_width=True)
     st.markdown("""
     ### Oleh:
     - Amar Evan Gading (2460321)  
@@ -58,6 +51,7 @@ if menu == "Beranda":
 
 elif menu == "Hitung pH":
     st.header("🔬 Kalkulator pH Larutan")
+    st.image("https://cdn.pixabay.com/photo/2016/03/31/18/33/acid-1295136_960_720.png", use_column_width=True)
 
     jenis = st.selectbox("Pilih Jenis Larutan:", ["Asam Kuat", "Asam Lemah", "Basa Kuat", "Basa Lemah"])
     konsentrasi = st.number_input("Masukkan konsentrasi (M):", min_value=0.0, step=0.001, format="%.3f")
@@ -92,6 +86,7 @@ elif menu == "Hitung pH":
 
 elif menu == "Tentang Aplikasi":
     st.header("📘 Tentang Aplikasi")
+    st.image("https://cdn.pixabay.com/photo/2017/03/21/15/39/test-2165766_960_720.jpg", use_column_width=True)
 
     st.markdown("""
     ### 1. Apa itu pH?
@@ -107,11 +102,9 @@ elif menu == "Tentang Aplikasi":
     - Basa Lemah: *pH = 14 - log(√(Kb × [B]))*
 
     ### Contoh Soal:
-    *Diketahui:* Sebuah larutan HCl (asam kuat) memiliki konsentrasi 0,01 M.  
-    *Ditanya:* Berapa pH larutan tersebut?  
-    *Jawab:* pH = -log(0,01) = 2.00
+    Hitung pH larutan HCl 0.01 M!
 
-    *Diketahui:* Larutan CH₃COOH (asam lemah) 0,1 M dengan Ka = 1.8 × 10⁻⁵.  
-    *Ditanya:* Berapa pH larutan tersebut?  
-    *Jawab:* pH = -log(√(Ka × [HA])) = -log(√(1.8e-5 × 0.1)) ≈ 2.87
+    *Penyelesaian:*
+    Karena HCl adalah asam kuat → [H⁺] = 0.01 M  
+    pH = -log(0.01) = 2.00
     """)
