@@ -8,7 +8,7 @@ st.set_page_config(page_title="Smart Kalkulator pH", layout="centered")
 st.markdown("""
     <style>
     body, .stApp {
-        background-color: #000000;
+        background-color: #537895;
         color: white;
     }
     h1, h2, h3, h4, h5, h6, p, label, .stTextInput, .stSelectbox, .stNumberInput, .stMarkdown, .stButton, .stRadio > div {
