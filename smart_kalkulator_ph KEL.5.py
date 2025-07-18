@@ -52,7 +52,6 @@ if menu == "Beranda":
 
 elif menu == "Hitung pH":
     st.header("🔬 Kalkulator pH Larutan")
-    st.image("https://cdn.pixabay.com/photo/2021/03/08/16/45/laboratory-6078184_960_720.png", caption="Simulasi Hitung pH", use_container_width=True)
 
     jenis = st.selectbox("Pilih Jenis Larutan:", ["Asam Kuat", "Asam Lemah", "Basa Kuat", "Basa Lemah"])
     konsentrasi = st.number_input("Masukkan konsentrasi (M):", min_value=0.0, step=0.001, format="%.3f")
@@ -87,8 +86,7 @@ elif menu == "Hitung pH":
 
 elif menu == "Tentang Aplikasi":
     st.header("📘 Tentang Aplikasi")
-    st.image("https://cdn.pixabay.com/photo/2016/11/18/12/52/chemistry-1835800_960_720.jpg", caption="Informasi Kimia", use_container_width=True)
-
+    
     st.markdown("""
     ### 1. Apa itu pH?
     pH adalah ukuran konsentrasi ion hidrogen (H⁺) dalam larutan. Skala pH berkisar dari 0 sampai 14:
