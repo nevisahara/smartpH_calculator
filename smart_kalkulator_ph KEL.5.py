@@ -21,12 +21,10 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 # Sidebar menu
 menu = st.sidebar.selectbox("Menu", ["Beranda", "Perhitungan pH", "Soal / Game"])
 
-
-# Sidebar Navigasi
-menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
 
 if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
