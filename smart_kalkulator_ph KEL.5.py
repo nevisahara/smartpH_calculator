@@ -25,7 +25,7 @@ st.markdown("""
 # Sidebar Navigasi
 menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
 
-iif menu == "Beranda":
+if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
 
     # Menampilkan gambar dengan ukuran custom (HTML)
