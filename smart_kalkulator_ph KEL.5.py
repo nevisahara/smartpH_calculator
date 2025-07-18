@@ -18,22 +18,14 @@ st.markdown("""
         background-color: #1e3a8a;
         color: white;
         border-radius: 8px;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-# CSS custom untuk mengubah warna font pilihan radio
-st.markdown("""
     <style>
-    /* Warna teks pada label radio sidebar */
-    .css-1fcb0an, .css-16idsys, .stRadio > div label {
+    .stRadio > div > label, .stRadio > div div {
         color: black !important;
         font-weight: bold;
     }
 
-    /* (Opsional) Ubah background sidebar agar kontras dengan teks hitam */
     [data-testid="stSidebar"] {
-        background-color: #f5f5f5;
+        background-color: #f0f0f0;
     }
     </style>
 """, unsafe_allow_html=True)
