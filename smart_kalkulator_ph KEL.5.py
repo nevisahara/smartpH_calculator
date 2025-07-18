@@ -34,7 +34,7 @@ if menu == "Beranda":
         <div style="text-align: center;">
             <img src="https://cdn.pixabay.com/photo/2021/03/02/17/38/science-6063326_960_720.png" 
                  alt="Ilustrasi Kimia" 
-                 width="105">
+                 width="250">
         </div>
         """,
         unsafe_allow_html=True
