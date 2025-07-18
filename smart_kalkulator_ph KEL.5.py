@@ -42,7 +42,7 @@ if menu == "Beranda":
 
     # Informasi pembuat
     st.markdown("""
-    ### Oleh:
+    ### Dibuat Oleh:
     - Amar Evan Gading (2460321)  
     - Diandra Namira Zahfa (2460360)  
     - Lutfhia Salwani Fatonah (2460410)  
