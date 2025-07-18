@@ -18,14 +18,6 @@ st.markdown("""
         background-color: #1e3a8a;
         color: white;
         border-radius: 8px;
-    <style>
-    .stRadio > div > label, .stRadio > div div {
-        color: black !important;
-        font-weight: bold;
-    }
-
-    [data-testid="stSidebar"] {
-        background-color: #f0f0f0;
     }
     </style>
 """, unsafe_allow_html=True)
