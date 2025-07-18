@@ -32,7 +32,7 @@ if menu == "Beranda":
     st.markdown(
         """
         <div style="text-align: center;">
-            <img src="https://pin.it/iRJuAROUm" 
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/13/48/chemistry-161575_640.png" 
                  alt="Ilustrasi Kimia" 
                  width="250">
         </div>
