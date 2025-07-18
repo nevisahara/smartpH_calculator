@@ -27,7 +27,7 @@ menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"]
 
 if menu == "Beranda":
     st.title("Selamat Datang di Smart Kalkulator pH")
-    st.image("https://cdn.pixabay.com/photo/2017/01/31/17/02/laboratory-2027517_1280.png", caption="Ilustrasi Kimia", use_container_width=True)
+    st.image("https://cdn.pixabay.com/photo/2021/03/02/17/38/science-6063326_960_720.png", caption="Ilustrasi Kimia", use_container_width=True)
     st.markdown("""
     ### Oleh:
     - Amar Evan Gading (2460321)  
