@@ -10,13 +10,13 @@ st.markdown("""
     <style>
         body {
             background-color: #3D8D7A;
-            color: #ffffff;
+            color: #FBFFE4;
         }
         .stApp {
             background-color: #3D8D7A;
         }
         h1, h2, h3, h4, h5 {
-            color: #ffffff;
+            color: #FBFFE4;
         }
         .sidebar .sidebar-content {
             background-color: #3D8D7A;
