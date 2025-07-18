@@ -22,6 +22,22 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+# CSS custom untuk mengubah warna font pilihan radio
+st.markdown("""
+    <style>
+    /* Warna teks pada label radio sidebar */
+    .css-1fcb0an, .css-16idsys, .stRadio > div label {
+        color: black !important;
+        font-weight: bold;
+    }
+
+    /* (Opsional) Ubah background sidebar agar kontras dengan teks hitam */
+    [data-testid="stSidebar"] {
+        background-color: #f5f5f5;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Sidebar Navigasi
 menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
 
