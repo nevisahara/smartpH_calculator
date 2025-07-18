@@ -4,57 +4,26 @@ import math
 # Konfigurasi halaman
 st.set_page_config(page_title="Smart Kalkulator pH", layout="centered")
 
-# CSS untuk latar belakang gradasi aurora
-st.markdown(
-    """
+# Tema warna hitam dengan font putih
+st.markdown("""
     <style>
-    body {
-        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364, #3a6073, #4ca1af, #4ca1af, #3a6073, #2c5364, #203a43, #0f2027);
-        background-size: 400% 400%;
-        animation: aurora 30s ease infinite;
+    body, .stApp {
+        background-color: #537895;
         color: white;
     }
-
-    @keyframes aurora {
-        0% {background-position: 0% 50%;}
-        50% {background-position: 100% 50%;}
-        100% {background-position: 0% 50%;}
+    h1, h2, h3, h4, h5, h6, p, label, .stTextInput, .stSelectbox, .stNumberInput, .stMarkdown, .stButton, .stRadio > div {
+        color: white !important;
     }
-
-    .css-18e3th9 { /* background sidebar */
-        background-color: rgba(15, 32, 39, 0.9) !important;
-    }
-
-    .css-1d391kg { /* block container padding */
-        padding: 2rem;
-    }
-
-    h1, h2, h3, h4, h5, h6, p, li {
-        color: #ffffff;
+    .stButton > button {
+        background-color: #1e3a8a;
+        color: white;
+        border-radius: 8px;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-)
-
+""", unsafe_allow_html=True)
 # Sidebar menu
 menu = st.sidebar.selectbox("Menu", ["Beranda", "Perhitungan pH", "Soal / Game"])
 
-# Tampilan BERANDA
-if menu == "Beranda":
-    st.title("🌟 Selamat Datang di Smart Kalkulator pH")
-
-    # Gambar ilustrasi
-    st.markdown(
-        """
-        <div style="text-align: center;">
-            <img src="https://cdn.pixabay.com/photo/2021/03/02/17/38/science-6063326_960_720.png" 
-                 alt="Ilustrasi Kimia" 
-                 width="500" style="border-radius: 20px;">
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
 
 # Sidebar Navigasi
 menu = st.sidebar.radio("Navigasi", ["Beranda", "Hitung pH", "Tentang Aplikasi"])
